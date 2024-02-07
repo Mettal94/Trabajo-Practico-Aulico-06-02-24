@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <p> Escribe un programa en JavaScript que solicite al usuario que ingrese tres números usando prompt(). Luego, calcula y muestra en la consola el promedio de estos tres números.</p>
+    <script>
+        let n1,n2,n3;
+        do{    
+            n1 = parseInt(prompt("Ingrese el primer número a sumar"));
+            n2 = parseInt(prompt("Ingrese el segundo número a sumar"));
+            n3 = parseInt(prompt("Ingrese el tercer número a sumar"));
+
+        }while(isNaN(n1) || isNaN(n2) || isNaN(n3));
+
+        let promedio = (n1 + n2 + n3) / 3;
+        console.log('Números ingresados: '+n1+', '+n2+', '+n3);
+        console.log('El promedio es '+promedio);
+    </script>
+</body>
+
+</html>

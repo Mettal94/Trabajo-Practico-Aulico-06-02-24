@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Ejercicio 5</h1>
+    <p> Escribe un programa en JavaScript que solicite al usuario que ingrese un número usando prompt() hasta 
+    que el usuario ingrese el valor -1; al finalizar mostrar por consola la suma de los valores ingresados.</p>
+    <script>
+        let x;
+        let suma = 0;
+        while( x != -1){
+            x = parseInt(prompt('Ingrese un número'));
+            console.log(x);
+            if(isNaN(x)||x==undefined){
+                alert('No se ingresó un numero por lo tanto no se tomará en cuenta para la suma')
+                continue;
+            }else if(x!=-1){
+                suma += x;
+            }
+            
+        }
+
+        console.log('La suma de los números ingresados es: '+suma);
+    </script>
+</body>
+</html>
